@@ -1,10 +1,9 @@
 #!/usr/bin/python3
-"""A module that defines a square."""
+"""This script defines a sqare class"""
 
 
 class Square:
-    """A class to represent a square"""
-
-    def __init__(self, size=0):
-        """Initializes a Square instance."""
+    """This is an empty class"""
+    def __init__(self, size):
+        """This is a constructor"""
         self.__size = size

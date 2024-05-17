@@ -1,31 +1,27 @@
 #!/usr/bin/python3
-"""A module that defines a square."""
+"""This script defines a sqare class"""
 
 
 class Square:
-    """A class to represent a square"""
-
+    """This is an empty class"""
     def __init__(self, size=0):
-        self.__size = size
+        """This is a constructor"""
+        self.size = size
 
     @property
     def size(self):
-        """
-        Getter method to retrieve the size of the square.
-
-        Returns:
-            int: The size of the square.
-        """
+        """Getter method for size."""
         return self.__size
 
     @size.setter
     def size(self, value):
+        """Setter method for size with validation."""
         if not isinstance(value, int):
             raise TypeError("size must be an integer")
-        elif value < 0:
+        if value < 0:
             raise ValueError("size must be >= 0")
-        else:
-            self.__size = value
+        self.__size = value
 
     def area(self):
-        return self.__size * self.__size
+        """Square the size and return an int"""
+        return self.__size ** 2
