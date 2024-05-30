@@ -1,3 +1,8 @@
+Dictionary serialized to data.xml
+
+Deserialized Data:
+{'name': 'John', 'age': '28', 'city': 'New York'}
+
 <data>
     <name>John</name>
     <age>28</age>
